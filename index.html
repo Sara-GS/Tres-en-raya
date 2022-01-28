@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic tac toe</title>
+</head>
+<body>
+<header>
+    <h1>Juego</h1>
+</header>
+<div class="container">
+    <h1>Tres en raya</h1>
+    <ul id="game">
+        
+        <li data-pos="0,0"></li>
+        <li data-pos="0,1"></li>
+        <li data-pos="0,2"></li>
+        
+        <li data-pos="1,0"></li>
+        <li data-pos="1,1"></li>
+        <li data-pos="1,2"></li>
+        
+        <li data-pos="2,0"></li>
+        <li data-pos="2,1"></li> 
+        <li data-pos="2,2"></li>
+    </ul>
+    
+    <button id="reset-game">Juega otra vez</button>
+    
+    
+    <div id="game-messages">
+        <span class="player-x-win">Jugador 1 Gana</span>
+        <span class="player-o-win">Jugador 2 Gana</span>
+        <span class="draw">Empate</span>
+    </div>
+    
+    <aside id="nfo">
+        <h2>Turno de juego</h2>
+        <div id="whos-turn" class="x">
+            <span class="x">Jugador 1</span>
+            <span class="o">Jugador 2</span>
+        </div>
+        
+        <h2>Puntuación</h2>
+        <div id="score">
+            Jugador 1: <span id="Jugador-one-score">0</span> <br />
+            Jugador 2: <span id="player-two-score">0</span> <br />
+        </div>
+    </aside>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>
